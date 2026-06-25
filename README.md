@@ -1,16 +1,105 @@
-# React + Vite
+# 영화 검색 및 선호작 관리 웹 애플리케이션
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 프로젝트 소개
 
-Currently, two official plugins are available:
+OMDb API를 활용하여 영화 정보를 검색하고, 관심 있는 영화를 선호작으로 등록할 수 있는 React 기반 웹 애플리케이션입니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+사용자는 영화 제목을 검색하여 다양한 영화 정보를 확인할 수 있으며, 마음에 드는 영화를 선호작 목록에 추가하거나 제거할 수 있습니다.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 주요 기능
 
-## Expanding the Oxlint configuration
+- 영화 검색 기능
+- 영화 포스터 및 개봉 연도 조회
+- 선호작(즐겨찾기) 추가 및 삭제
+- 가로 스크롤 방식의 영화 목록 제공
+- 다크 테마 UI 적용
+- Google Fonts를 활용한 디자인 적용
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 사용 기술
+
+### Front-End
+
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### API
+
+- OMDb API
+
+### React Hook
+
+- useState
+- useEffect
+
+---
+
+## 프로젝트 특징
+
+### 1. 영화 검색
+
+사용자가 입력한 영화 제목을 OMDb API에 요청하여 영화 목록을 불러옵니다.
+
+### 2. 선호작 관리
+
+관심 있는 영화를 선호작 목록에 추가하거나 제거할 수 있습니다.
+
+### 3. 직관적인 UI
+
+영화 포스터를 카드 형식으로 표시하여 사용자가 쉽게 영화를 탐색할 수 있습니다.
+
+### 4. 가로 스크롤 목록
+
+영화 목록과 선호작 목록을 가로 스크롤 형태로 구현하여 넷플릭스 스타일의 UI를 적용했습니다.
+
+### 5. 반응형 인터페이스
+
+Flexbox를 활용하여 다양한 화면 크기에서도 자연스럽게 표시됩니다.
+
+---
+
+## 폴더 구조
+
+```text
+src
+├─ App.jsx
+├─ App.css
+└─ main.jsx
+```
+
+---
+
+## 실행 방법
+
+### 프로젝트 설치
+
+```bash
+npm install
+```
+
+### 개발 서버 실행
+
+```bash
+npm run dev
+```
+
+### 프로젝트 빌드
+
+```bash
+npm run build
+```
+
+---
+
+## 배포
+
+- Netlify를 이용하여 배포
+- Vite 기반 React 프로젝트
+
+---
+
